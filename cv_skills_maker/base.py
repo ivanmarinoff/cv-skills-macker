@@ -1,7 +1,7 @@
 """
 cv-skills-maker base module.
 
-This is the principal module of the remuneration project.
+This is the principal module of the cv-skills-maker project.
 here you put your main classes and objects.
 """
 
@@ -55,7 +55,3 @@ def generate_cv_text(hiring_criteria):
 # Test the functions
 print(generate_portfolio_text("hiring criteria"))
 print(generate_cv_text("hiring criteria"))
-
-
-
-
