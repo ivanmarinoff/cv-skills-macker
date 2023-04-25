@@ -30,7 +30,7 @@ def read_requirements(path):
 
 
 setup(
-    name="cv-skills-maker",
+    name="cv_skills_maker",
     version=read("cv-skills-maker", "VERSION"),
     description="Awesome cv-skills-maker created by ivanmarinoff",
     url="https://github.com/ivanmarinoff/cv-skills-maker/",

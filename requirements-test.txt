@@ -1,5 +1,5 @@
 # This requirements are for development and testing only, not for production.
-pytest
+pytest==7.3.1
 coverage
 flake8
 black

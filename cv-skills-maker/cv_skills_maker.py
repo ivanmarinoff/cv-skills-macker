@@ -55,3 +55,8 @@ def generate_cv_text(hiring_criteria):
 # Test the functions
 print(generate_portfolio_text("hiring criteria"))
 print(generate_cv_text("hiring criteria"))
+
+
+def main():
+    if __name__ == "__main__":
+        main()
