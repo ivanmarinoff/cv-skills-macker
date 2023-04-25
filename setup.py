@@ -30,7 +30,7 @@ def read_requirements(path):
 
 
 setup(
-    name="cv_skills_maker",
+    name="cv-skills-maker",
     version=read("cv-skills-maker", "VERSION"),
     description="Awesome cv-skills-maker created by ivanmarinoff",
     url="https://github.com/ivanmarinoff/cv-skills-maker/",
@@ -40,7 +40,7 @@ setup(
     packages=find_packages(exclude=[".github"]),
     install_requires=read_requirements("requirements.txt"),
     entry_points={
-        "console_scripts": ["cv-skills-maker = cv-skills-maker.__main__:main"]
+        "console_scripts": ["cv_skills_maker = cv_skills_maker.__main__:main"]
     },
     extras_require={"test": read_requirements("requirements-test.txt")},
 )
