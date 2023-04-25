@@ -27,19 +27,19 @@ install:          ## Install the project in dev mode.
 .PHONY: fmt
 fmt:              ## Format code using black & isort.
 	$(ENV_PREFIX)isort remuneration/
-	$(ENV_PREFIX)black -l 79 remuneration/
+	$(ENV_PREFIX)black -l 79 cv-skills-maker/
 	$(ENV_PREFIX)black -l 79 tests/
 
 .PHONY: lint
 lint:             ## Run pep8, black, mypy linters.
 	$(ENV_PREFIX)flake8 remuneration/
-	$(ENV_PREFIX)black -l 79 --check remuneration/
+	$(ENV_PREFIX)black -l 79 --check cv-skills-maker/
 	$(ENV_PREFIX)black -l 79 --check tests/
-	$(ENV_PREFIX)mypy --ignore-missing-imports remuneration/
+	$(ENV_PREFIX)mypy --ignore-missing-imports cv-skills-maker/
 
 .PHONY: test
 test: lint        ## Run tests and generate coverage report.
-	$(ENV_PREFIX)pytest -v --cov-config .coveragerc --cov=remuneration -l --tb=short --maxfail=1 tests/
+	$(ENV_PREFIX)pytest -v --cov-config .coveragerc --cov=cv-skills-maker -l --tb=short --maxfail=1 tests/
 	$(ENV_PREFIX)coverage xml
 	$(ENV_PREFIX)coverage html
 
@@ -98,10 +98,10 @@ switch-to-poetry: ## Switch to poetry package manager.
 	@echo "Switching to poetry ..."
 	@if ! poetry --version > /dev/null; then echo 'poetry is required, install from https://python-poetry.org/'; exit 1; fi
 	@rm -rf .venv
-	@poetry init --no-interaction --name=a_flask_test --author=rochacbruno
+	@poetry init --no-interaction --name=a_flask_test --author=ivanmarinoff
 	@echo "" >> pyproject.toml
 	@echo "[tool.poetry.scripts]" >> pyproject.toml
-	@echo "remuneration = 'remuneration.__main__:main'" >> pyproject.toml
+	@echo "cv-skills-maker = 'cv-skills-maker.__main__:main'" >> pyproject.toml
 	@cat requirements.txt | while read in; do poetry add --no-interaction "$${in}"; done
 	@cat requirements-test.txt | while read in; do poetry add --no-interaction "$${in}" --dev; done
 	@poetry install --no-interaction
@@ -109,14 +109,12 @@ switch-to-poetry: ## Switch to poetry package manager.
 	@mv requirements* .github/backup
 	@mv setup.py .github/backup
 	@echo "You have switched to https://python-poetry.org/ package manager."
-	@echo "Please run 'poetry shell' or 'poetry run remuneration'"
+	@echo "Please run 'poetry shell' or 'poetry run cv-skills-maker'"
 
 .PHONY: init
 init:             ## Initialize the project based on an application template.
 	@./.github/init.sh
 
 
-# This project has been generated from rochacbruno/python-project-template
-# __author__ = 'rochacbruno'
-# __repo__ = https://github.com/rochacbruno/python-project-template
-# __sponsor__ = https://github.com/sponsors/rochacbruno/
+# This project has been generated from ivanmarinoff/python-project-template
+# __author__ = 'ivanmarinoff'

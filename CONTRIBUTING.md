@@ -8,9 +8,9 @@ This instructions are for linux base systems. (Linux, MacOS, BSD, etc.)
 ## Setting up your own fork of this repo.
 
 - On github interface click on `Fork` button.
-- Clone your fork of this repo. `git clone git@github.com:YOUR_GIT_USERNAME/remuneration.git`
+- Clone your fork of this repo. `git clone git@github.com:YOUR_GIT_USERNAME/cv-skills-maker.git`
 - Enter the directory `cd remuneration`
-- Add upstream repo `git remote add upstream https://github.com/ivanmarinoff/remuneration`
+- Add upstream repo `git remote add upstream https://github.com/ivanmarinoff/cv-skills-maker`
 
 ## Setting up your own virtual environment
 
@@ -93,12 +93,6 @@ init:             ## Initialize the project based on an application template.
 
 ## Making a new release
 
-This project uses [semantic versioning](https://semver.org/) and tags releases with `X.Y.Z`
-Every time a new tag is created and pushed to the remote repo, github actions will
-automatically create a new release on github and trigger a release on PyPI.
-
-For this to work you need to setup a secret called `PIPY_API_TOKEN` on the project settings>secrets, 
-this token can be generated on [pypi.org](https://pypi.org/account/).
 
 To trigger a new release all you need to do is.
 

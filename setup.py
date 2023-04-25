@@ -1,4 +1,4 @@
-"""Python setup.py for remuneration package"""
+"""Python setup.py for cv-skills-maker package"""
 import io
 import os
 from setuptools import find_packages, setup
@@ -6,7 +6,7 @@ from setuptools import find_packages, setup
 
 def read(*paths, **kwargs):
     """Read the contents of a text file safely.
-    >>> read("remuneration", "VERSION")
+    >>> read("cv-skills-maker", "VERSION")
     '0.1.0'
     >>> read("README.md")
     ...
@@ -33,7 +33,7 @@ setup(
     name="remuneration",
     version=read("remuneration", "VERSION"),
     description="Awesome remuneration created by ivanmarinoff",
-    url="https://github.com/ivanmarinoff/remuneration/",
+    url="https://github.com/ivanmarinoff/cv-skills-maker/",
     long_description=read("README.md"),
     long_description_content_type="text/markdown",
     author="ivanmarinoff",

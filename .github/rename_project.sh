@@ -17,9 +17,9 @@ echo "Description: $description";
 echo "Renaming project..."
 
 original_author="ivanmarinoff"
-original_name="remuneration"
-original_urlname="remuneration"
-original_description="Awesome remuneration created by ivanmarinoff"
+original_name="cv-skills-maker"
+original_urlname="cv-skills-maker"
+original_description="Awesome cv-skills-maker, created by ivanmarinoff"
 # for filename in $(find . -name "*.*") 
 for filename in $(git ls-files) 
 do
