@@ -1,5 +1,5 @@
 # From cv-skill-maker Project:
-✅This is a simple code to structure a CS with a specific set of skills 
+✅This is a simple code to structure a CV portfolio with a specific set of skills 
 predefined in the file and randomly represented.
 Numerous variants of combination between the called phrases are possible, 
 as well as a change in the structure of the printed text.
