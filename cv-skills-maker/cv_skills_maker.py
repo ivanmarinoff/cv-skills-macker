@@ -13,10 +13,10 @@ hiring_criteria = ["experience", "skills", "education", "certifications", "award
 
 
 def generate_portfolio_text(hiring_criteria):
-    portfolio_text = "As a {0} professional with a passion for {1}, I possess strong {2} and {3}. My {4} and {5} " \
+    portfolio_text = " As a {0} professional with a passion for {1}, I possess strong {2} and {3}.\n My {4} and {5} " \
                      "have " \
                      "allowed me to develop a {6} approach to problem-solving, and I am able to {7} with " \
-                     "cross-functional teams to {8}. In my previous roles, I have {9} and {10}, and I am excited to " \
+                     "cross-functional teams to {8}.\n In my previous roles, I have {9} and {10}, and I am excited to " \
                      "bring my skills and expertise to new challenges."
     experience = random.choice(["seasoned", "experienced", "skilled"])
     passion = random.choice(["innovation", "disruptive technologies", "sustainability"])
@@ -39,8 +39,8 @@ def generate_portfolio_text(hiring_criteria):
 
 # Sample text for CV
 def generate_cv_text(hiring_criteria):
-    cv_text = "I am a {0} professional with {1} years of experience in {2}. My {3} and {4} have enabled me to develop " \
-              "a deep understanding of {5} and the ability to {6}. Throughout my career, I have {7} and {8}, " \
+    cv_text = " I am a {0} professional with {1} years of experience in {2}.\n My {3} and {4} have enabled me to " \
+              "develop a deep understanding of {5} and the ability to {6}.\n Throughout my career, I have {7} and {8}, " \
               "and have been recognized with {9} for my contributions to the {10} team."
     experience = random.choice(["seasoned", "experienced", "skilled"])
     years_of_experience = random.randint(5, 15)
