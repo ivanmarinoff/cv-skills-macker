@@ -9,7 +9,6 @@ here you print final result.
 
 NAME = "cv-skills-maker"
 
-
 from generate_cv_text import generate_cv_text
 from generate_portfolio_text import generate_portfolio_text
 

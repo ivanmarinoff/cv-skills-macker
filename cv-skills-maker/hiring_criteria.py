@@ -4,7 +4,8 @@ class HiringCriteria:
 
     # Define the get_hiring_criteria() method
     def get_hiring_criteria(self):
-        self.hiring_criteria = ["experience", "skills", "education", "certifications", "accomplishments"]
+        self.hiring_criteria = ["experience", "skills", "education", "certifications", "achievements",
+                                "collaborate", "accomplishments"]
         return self.hiring_criteria
 
 
